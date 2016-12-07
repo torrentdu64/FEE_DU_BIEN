@@ -8,4 +8,14 @@ class User < ActiveRecord::Base
   has_many :massages, through: :prestations
   has_many :accompagnements, through: :prestations
   has_many :personnels, through: :prestations
+
+  validates :nom, presence: true
+  validates :prenom, presence: true
+
 end
+
+
+
+
+
+
