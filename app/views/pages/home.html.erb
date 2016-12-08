@@ -13,7 +13,7 @@
 
 
     <!-- START YOUTUBE HOME -->
-    <section id="home" class="youtube_bg" style="background-image: url(assets/img/bg/youtube-bg.jpg);  background-size:cover; background-position: center center;">
+    <section id="home" class="youtube_bg" style="background-image: url(/assets/images/bg/youtube-bg.jpg);  background-size:cover; background-position: center center;">
       <a class="player" data-property="{ videoURL:'https://youtu.be/f7MskKkn2Jg',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, quality:'default'}"></a>
       <div class="container">
         <div class="row">
@@ -36,7 +36,7 @@
         <div class="row">
           <div class="col-md-6 col-sm-12 col-xs-12">
             <div class="about_img">
-              <img src="assets/img/about.jpg" class="img-responsive" alt="" />
+              <%= image_tag("about.jpg", class: "img-responsive")%>
             </div>
           </div><!-- END COL -->
           <div class="col-md-6 col-sm-12 col-xs-12">
@@ -102,7 +102,7 @@
           </div><!--- END COL -->
           <div class="col-md-6 col-sm-6 col-xs-12">
             <div class="feature_img">
-              <img src="assets/img/man.jpg" alt="" />
+              <%= image_tag("man.jpg")%>
             </div>
           </div><!--- END COL -->
         </div><!--- END ROW -->
@@ -155,7 +155,7 @@
           <div class="col-md-3 col-sm-3 col-xs-12 no-padding">
             <div class="grid">
               <figure class="effect-apollo">
-                <img src="assets/img/portfolio/1.jpg" class="img-responsive" alt=""/>
+                <%= image_tag("portfolio/1.jpg", class: "img-responsive")%>
                 <figcaption>
                   <a class="prettyPhoto image_zoom" href="assets/img/portfolio/1.jpg"></a>
                   <p><a href="single_project.html" data-toggle="modal" data-target="#projectModal">Body Message</a></p>
@@ -166,7 +166,7 @@
           <div class="col-md-3 col-sm-3 col-xs-12 no-padding">
             <div class="grid">
               <figure class="effect-apollo">
-                <img src="assets/img/portfolio/2.jpg" class="img-responsive" alt=""/>
+                <%= image_tag("portfolio/2.jpg", class: "img-responsive")%>
                 <figcaption>
                   <a class="prettyPhoto image_zoom" href="assets/img/portfolio/2.jpg"></a>
                   <p><a href="single_project.html" data-toggle="modal" data-target="#projectModal">Body Message</a></p>
@@ -177,7 +177,7 @@
           <div class="col-md-3 col-sm-3 col-xs-12 no-padding">
             <div class="grid">
               <figure class="effect-apollo">
-                <img src="assets/img/portfolio/3.jpg" class="img-responsive" alt=""/>
+                <%= image_tag("portfolio/3.jpg", class: "img-responsive")%>
                 <figcaption>
                   <a class="prettyPhoto image_zoom" href="assets/img/portfolio/3.jpg"></a>
                   <p><a href="single_project.html" data-toggle="modal" data-target="#projectModal">Body Message</a></p>
@@ -188,7 +188,7 @@
           <div class="col-md-3 col-sm-3 col-xs-12 no-padding">
             <div class="grid">
               <figure class="effect-apollo">
-                <img src="assets/img/portfolio/4.jpg" class="img-responsive" alt=""/>
+                <%= image_tag("portfolio/4.jpg", class: "img-responsive")%>
                 <figcaption>
                   <a class="prettyPhoto image_zoom" href="assets/img/portfolio/4.jpg"></a>
                   <p><a href="single_project.html" data-toggle="modal" data-target="#projectModal">Skin care</a></p>
@@ -199,7 +199,7 @@
           <div class="col-md-3 col-sm-3 col-xs-12 no-padding">
             <div class="grid">
               <figure class="effect-apollo">
-                <img src="assets/img/portfolio/5.jpg" class="img-responsive" alt=""/>
+                <%= image_tag("portfolio/5.jpg", class: "img-responsive")%>
                 <figcaption>
                   <a class="prettyPhoto image_zoom" href="assets/img/portfolio/5.jpg"></a>
                   <p><a href="single_project.html" data-toggle="modal" data-target="#projectModal">Skin care</a></p>
@@ -210,7 +210,7 @@
           <div class="col-md-3 col-sm-3 col-xs-12 no-padding">
             <div class="grid">
               <figure class="effect-apollo">
-                <img src="assets/img/portfolio/6.jpg" class="img-responsive" alt=""/>
+                <%= image_tag("portfolio/6.jpg", class: "img-responsive")%>
                 <figcaption>
                   <a class="prettyPhoto image_zoom" href="assets/img/portfolio/6.jpg"></a>
                   <p><a href="single_project.html" data-toggle="modal" data-target="#projectModal">Hair Cut</a></p>
@@ -221,7 +221,7 @@
           <div class="col-md-3 col-sm-3 col-xs-12 no-padding">
             <div class="grid">
               <figure class="effect-apollo">
-                <img src="assets/img/portfolio/7.jpg" class="img-responsive" alt=""/>
+                <%= image_tag("portfolio/7.jpg", class: "img-responsive")%>
                 <figcaption>
                   <a class="prettyPhoto image_zoom" href="assets/img/portfolio/7.jpg"></a>
                   <p><a href="single_project.html" data-toggle="modal" data-target="#projectModal">Beauty Spa</a></p>
@@ -232,7 +232,7 @@
           <div class="col-md-3 col-sm-3 col-xs-12 no-padding">
             <div class="grid">
               <figure class="effect-apollo">
-                <img src="assets/img/portfolio/8.jpg" class="img-responsive" alt=""/>
+                <%= image_tag("portfolio/8.jpg", class: "img-responsive")%>
                 <figcaption>
                   <a class="prettyPhoto image_zoom" href="assets/img/portfolio/8.jpg"></a>
                   <p><a href="single_project.html" data-toggle="modal" data-target="#projectModal">Nail Care</a></p>
@@ -287,7 +287,7 @@
           <div class="col-md-4 col-sm-4 col-xs-12">
             <div class="single_offer">
               <div class="single_offer_img">
-                <img src="assets/img/service_1.jpg" class="img-responsive" alt="" />
+                <%= image_tag("service_1.jpg", class: "img-responsive")%>
               </div>
               <h4>Stone Message</h4>
               <h5>$100</h5>
@@ -297,7 +297,7 @@
           <div class="col-md-4 col-sm-4 col-xs-12">
             <div class="single_offer">
               <div class="single_offer_img">
-                <img src="assets/img/service_2.jpg" class="img-responsive" alt="" />
+                <%= image_tag("service_2.jpg", class: "img-responsive")%>
               </div>
               <h4>Body Message</h4>
               <h5>$100</h5>
@@ -307,7 +307,7 @@
           <div class="col-md-4 col-sm-4 col-xs-12">
             <div class="single_offer">
               <div class="single_offer_img">
-                <img src="assets/img/service_3.jpg" class="img-responsive" alt="" />
+                <%= image_tag("service_3.jpg", class: "img-responsive")%>
               </div>
               <h4>Face Treatment</h4>
               <h5>$100</h5>
@@ -331,7 +331,7 @@
           <div class="col-md-3 col-sm-6">
             <div class="single_team">
               <div class="img_wrap">
-                <img src="assets/img/team/team-1.jpg" class="img-responsive" alt="" />
+                <%= image_tag("team/team-1.jpg", class: "img-responsive")%>
                 <div class="social_link">
                   <div class="social_table">
                     <ul class="list-inline">
@@ -350,7 +350,7 @@
           <div class="col-md-3 col-sm-6">
             <div class="single_team">
               <div class="img_wrap">
-                <img src="assets/img/team/team-2.jpg" class="img-responsive" alt="" />
+                 <%= image_tag("team/team-2.jpg", class: "img-responsive")%>
                 <div class="social_link">
                   <div class="social_table">
                     <ul class="list-inline">
@@ -369,7 +369,7 @@
           <div class="col-md-3 col-sm-6">
             <div class="single_team">
               <div class="img_wrap">
-                <img src="assets/img/team/team-3.jpg" class="img-responsive" alt="" />
+                 <%= image_tag("team/team-3.jpg", class: "img-responsive")%>
                 <div class="social_link">
                   <div class="social_table">
                     <ul class="list-inline">
@@ -388,7 +388,7 @@
           <div class="col-md-3 col-sm-6">
             <div class="single_team">
               <div class="img_wrap">
-                <img src="assets/img/team/team-4.jpg" class="img-responsive" alt="" />
+                 <%= image_tag("team/team-4.jpg", class: "img-responsive")%>
                 <div class="social_link">
                   <div class="social_table">
                     <ul class="list-inline">
@@ -523,21 +523,21 @@
                                 <li>
                                     <div class="testi-slider-item">
                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a consequat nibh. Praesent sodales enim facilisis accumsan rhoncus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a consequat nibh. Praesent sodales enim facilisis accumsan rhoncus.</p>
-                                        <img src="assets/img/testimonial/1.jpg" alt="">
+                                         <%= image_tag("testimonial/1.jpg")%>
                                         <h6>John Doe - <span class="colored-text">Monalisa Inc.</span></h6>
                                     </div>
                                 </li><!--SINGLE SLIDE-->
                                 <li>
                                     <div class="testi-slider-item">
                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a consequat nibh. Praesent sodales enim facilisis accumsan rhoncus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a consequat nibh. Praesent sodales enim facilisis accumsan rhoncus.</p>
-                                        <img src="assets/img/testimonial/2.jpg" alt="">
+                                        <%= image_tag("testimonial/2.jpg")%>
                                         <h6>John Doe - <span class="colored-text">Monalisa Inc.</span></h6>
                                     </div>
                                 </li><!--SINGLE SLIDE-->
                                 <li>
                                     <div class="testi-slider-item">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a consequat nibh. Praesent sodales enim facilisis accumsan rhoncus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a consequat nibh. Praesent sodales enim facilisis accumsan rhoncus.</p>
-                                        <img src="assets/img/testimonial/3.jpg" alt="">
+                                        <%= image_tag("testimonial/3.jpg")%>
                                         <h6>Emma Doe - <span class="colored-text">Monalisa Inc.</span></h6>
                                     </div>
                                 </li><!--SINGLE SLIDE-->
@@ -561,7 +561,7 @@
           <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
             <div class="single-blog">
               <div class="single-img">
-                <img src="assets/img/blog/blog-1.jpg" class="img-responsive" alt=""/>
+                <%= image_tag("blog/blog-1.jpg", class: "img-responsive")%>
                 <div class="post-date">
                   <h4>24 October, 2016</h4>
                 </div>
@@ -585,7 +585,7 @@
           <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
             <div class="single-blog">
               <div class="single-img">
-                <img src="assets/img/blog/blog-2.jpg" class="img-responsive" alt=""/>
+                <%= image_tag("blog/blog-2.jpg", class: "img-responsive")%>
                 <div class="post-date">
                   <h4>25 October, 2016</h4>
                 </div>
@@ -618,18 +618,18 @@
           <div class="row">
             <div class="col-md-12">
               <div class="partner  wow fadeInRight">
-                  <a href="#"><img src="assets/img/partner/1.png" alt="image"></a>
-                <a href="#"><img src="assets/img/partner/2.png" alt="image"></a>
-                <a href="#"><img src="assets/img/partner/3.png" alt="image"></a>
-                <a href="#"><img src="assets/img/partner/4.png" alt="image"></a>
-                <a href="#"><img src="assets/img/partner/5.png" alt="image"></a>
-                <a href="#"><img src="assets/img/partner/6.png" alt="image"></a>
-                <a href="#"><img src="assets/img/partner/1.png" alt="image"></a>
-                <a href="#"><img src="assets/img/partner/2.png" alt="image"></a>
-                <a href="#"><img src="assets/img/partner/3.png" alt="image"></a>
-                <a href="#"><img src="assets/img/partner/4.png" alt="image"></a>
-                <a href="#"><img src="assets/img/partner/5.png" alt="image"></a>
-                <a href="#"><img src="assets/img/partner/6.png" alt="image"></a>
+                <a href="#"><%= image_tag("partner/1.png", alt: "image")%></a>
+                <a href="#"><%= image_tag("partner/2.png", alt: "image")%></a>
+                <a href="#"><%= image_tag("partner/3.png", alt: "image")%></a>
+                <a href="#"><%= image_tag("partner/4.png", alt: "image")%></a>
+                <a href="#"><%= image_tag("partner/5.png", alt: "image")%></a>
+                <a href="#"><%= image_tag("partner/6.png", alt: "image")%></a>
+                <a href="#"><%= image_tag("partner/1.png", alt: "image")%></a>
+                <a href="#"><%= image_tag("partner/2.png", alt: "image")%></a>
+                <a href="#"><%= image_tag("partner/3.png", alt: "image")%></a>
+                <a href="#"><%= image_tag("partner/4.png", alt: "image")%></a>
+                <a href="#"><%= image_tag("partner/5.png", alt: "image")%></a>
+                <a href="#"><%= image_tag("partner/6.png", alt: "image")%></a>
               </div>
             </div><!-- END COL  -->
           </div><!--END  ROW  -->
@@ -718,7 +718,7 @@
       <div class="container">
         <div class="row text-center">
           <div class="col-md-12 col-sm-12 col-xs-12 wow zoomIn">
-            <a href="index.html" class="footer-logo"><img src="assets/img/logo.png" alt="logo"></a>
+            <a href="index.html" class="footer-logo"><%= image_tag("logo.png") %></a>
             <div class="footer_social">
               <ul>
                 <li><a class="footer_facebook  wow bounceInDown" data-wow-delay=".1s" href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a></li>
