@@ -1,4 +1,46 @@
 Rails.application.routes.draw do
+  get 'prestations/new'
+
+  get 'prestations/create'
+
+  get 'prestations/update'
+
+  get 'prestations/edit'
+
+  get 'prestations/destroy'
+
+  get 'prestations/show'
+
+  get 'prestations/index'
+
+  get 'massages/new'
+
+  get 'massages/create'
+
+  get 'massages/update'
+
+  get 'massages/edit'
+
+  get 'massages/destroy'
+
+  get 'massages/show'
+
+  get 'massages/index'
+
+  get 'accompagnements/new'
+
+  get 'accompagnements/create'
+
+  get 'accompagnements/update'
+
+  get 'accompagnements/edit'
+
+  get 'accompagnements/destroy'
+
+  get 'accompagnements/show'
+
+  get 'accompagnements/index'
+
   devise_for :users
   root to: 'pages#home'
   # The priority is based upon order of creation: first created -> highest priority.
