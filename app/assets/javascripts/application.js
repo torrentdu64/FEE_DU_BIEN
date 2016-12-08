@@ -12,3 +12,5 @@
 //= require wow.min.js
 //= require scripts.js
 //= require_tree .
+//= require mb_YTPlayer.js
+
