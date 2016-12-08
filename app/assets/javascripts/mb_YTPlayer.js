@@ -1,3 +1,3 @@
 $(function(){
-      $("#[playerID]").YTPlayer();
+      $(".player").YTPlayer();
     });
