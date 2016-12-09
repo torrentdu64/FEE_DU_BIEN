@@ -19,10 +19,11 @@
 
 
     <!-- START YOUTUBE HOME -->
-    <section id="home" class="youtube_bg fullhover wow rubberBand" style="background-image: <%= asset_url("bg/youtube-bg.jpg") %>;  background-size:cover; background-position: center center;">
+    <section id="home" class="youtube_bg fullhover wow rubberBand bgvideohome" style="">
       <div style=" z-index: -99; width: 1300px; height: 726px; position:absolute; top: -52px;left: -10px;">
-        <iframe frameborder="0" height="100%" width="100%"
-          src="https://youtube.com/embed/F57hle9Qxfg?autoplay=1&controls=0&showinfo=0&autohide=1">
+        <iframe id="ytplayer" type="text/html" frameborder="0" height="100%" width="100%"
+            src="https://www.youtube.com/embed/F57hle9Qxfg?autoplay=1&controls=0&disablekb=1&fs=0&loop=1&modestbranding=1&rel=0&showinfo=0&color=white"
+            frameborder="0" allowfullscreen>
         </iframe>
       </div>
       <div class="container">

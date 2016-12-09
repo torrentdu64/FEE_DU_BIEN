@@ -92,7 +92,7 @@ fieldset {
 }
 .status,
 .status-mes {
-    background-image: url("../../../assets/images/status.gif");
+    background-image: url("images/status.gif");
     background-position: center;
     background-repeat: no-repeat;
     height: 200px;
@@ -459,8 +459,14 @@ height:700px;
 }
 
 /*START TEXT SLIDER*/
-
 /*START HTML5 VIDEO*/
+.bgvideohome{
+    background-image: url("bg/youtube-bg.jpg");
+    background-size:cover;
+    background-position: center center;
+    z-index:-999999;
+    height:726px;
+}
 .html-video {
     top: 0%;
     left: 0%;
@@ -498,11 +504,9 @@ video { min-width: 100% }
 
 .youtube_bg {
 position: relative;
-height:700px;
+height:670px;
 }
-.youtube_bg:hover{
-  height:700px;
-}
+
 
 .youtube_bg:before {
     background: rgba(0, 0, 0, 0.6);
