@@ -650,7 +650,13 @@ position: absolute;
 top: 0;
 width: 100%;
 }
+.parala{
+  background-image: url(service_1.jpg);
+  background-size:cover;
+  background-position: center center;
+  background-attachment:fixed;
 
+}
 @media only screen and (max-width:480px) {
 .timer {margin-bottom:20px;}
 }
@@ -821,6 +827,11 @@ transition: all 0.2s ease 0s;
 * 08.START SPECIAL OFFER DESIGN
 * ----------------------------------------------------------------------------------------
 */
+.bgappoint {
+  background-image: url(bg/how-it-work.jpg);
+  background-size:cover;
+  background-position: center center;
+}
 .special_offer {
     position: relative;
 }
@@ -1053,6 +1064,12 @@ background: #8bc34a none repeat scroll 0 0;
 * 11.START HOW IT WORKS DESIGN
 * ----------------------------------------------------------------------------------------
 */
+.bgvideo{
+  background-image: url(bg/how-it-work.jpg);
+  background-size:cover;
+   background-position: center center;
+}
+
 .about_video {
     height: 500px;
     position: relative;
