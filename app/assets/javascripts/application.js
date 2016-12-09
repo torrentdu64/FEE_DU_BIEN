@@ -5,12 +5,12 @@
 //= require jquery.inview.min.js
 //= require jquery.flexslider-min.js
 //= require jquery.prettyPhoto.js
-//= require jquery.mb.YTPlayer.min.js
 //= require owl.carousel.js
 //= require scrolltopcontrol.js
 //= require form-contact.js
 //= require wow.min.js
+//= require googlemap.js
 //= require scripts.js
 //= require_tree .
-//= require mb_YTPlayer.js
+
 

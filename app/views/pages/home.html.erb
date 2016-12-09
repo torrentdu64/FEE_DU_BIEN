@@ -1,10 +1,16 @@
 
-
-<body data-spy="scroll" data-offset="80">
+<!-- z-index: -99;
+    width: 1300px;
+    height: 726px;
+    position: absolute;
+    top: -52px;
+}
+} -->
+<body data-spy="croll" data-offset="80" >
 
     <!-- START PRELOADER -->
-    <!-- <div class="preloader"> -->
-    <!--   <div class="status">
+    <!-- <div class="preloader">
+      <div class="status">
         <div class="status-mes"><h4>Monalisa</h4></div>
       </div>
     </div> -->
@@ -13,9 +19,12 @@
 
 
     <!-- START YOUTUBE HOME -->
-    <section id="home" class="youtube_bg" style="background-image: url(/assets/images/bg/youtube-bg.jpg);  background-size:cover; background-position: center center;">
-      <a class="player" data-property="{ videoURL:'https://youtu.be/f7MskKkn2Jg',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, quality:'default'}">
-      </a>
+    <section id="home" class="youtube_bg fullhover wow rubberBand" style="background-image: <%= asset_url("bg/youtube-bg.jpg") %>;  background-size:cover; background-position: center center;">
+      <div style=" z-index: -99; width: 1300px; height: 726px; position:absolute; top: -52px;left: -10px;">
+        <iframe frameborder="0" height="100%" width="100%"
+          src="https://youtube.com/embed/F57hle9Qxfg?autoplay=1&controls=0&showinfo=0&autohide=1">
+        </iframe>
+      </div>
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
