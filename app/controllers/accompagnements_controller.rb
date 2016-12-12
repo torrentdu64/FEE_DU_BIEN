@@ -8,7 +8,7 @@ class AccompagnementsController < ApplicationController
 
   def create
      @accompagnement = Accompagnement.new(accompagnement_params)
-    if @dish.save
+    if @accompagnement.save
       redirect_to user_profil_path
     else
       render :create
