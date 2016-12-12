@@ -1,4 +1,18 @@
 Rails.application.routes.draw do
+  get 'personnels/new'
+
+  get 'personnels/create'
+
+  get 'personnels/update'
+
+  get 'personnels/destroy'
+
+  get 'personnels/index'
+
+  get 'personnels/show'
+
+  get 'personnels/edit'
+
   get 'prestations/new'
 
   get 'prestations/create'
