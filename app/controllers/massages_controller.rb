@@ -10,6 +10,7 @@ class MassagesController < ApplicationController
       redirect_to user_profil_path
     else
       render :create
+    end
   end
 
   def update
