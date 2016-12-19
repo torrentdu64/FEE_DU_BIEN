@@ -1,6 +1,6 @@
 class MassagesController < ApplicationController
   skip_before_action :authenticate_user!, only: [ :index, :show, :create, :new, :update, :destroy, :edit ]
-  before_action :set_massage, only: [:show, :create]
+  # before_action :set_massage, only: [:show, :create]
   def new
   end
 
@@ -30,9 +30,9 @@ class MassagesController < ApplicationController
 
   private
 
-  def set_massage
-    @massage = Massage.find(params[:id])
-  end
+  # def set_massage
+  #   @massage = Massage.find(params[:id])
+  # end
 
   def massage_params
     params.require(:massage).permit(:nom, :description, :temps, :prix)
