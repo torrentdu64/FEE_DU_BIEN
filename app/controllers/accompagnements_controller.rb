@@ -1,6 +1,6 @@
 class AccompagnementsController < ApplicationController
-
-  before_action :set_accompagnement, only: [:show, :crate]
+  skip_before_action :authenticate_user!, only: [ :index, :show, :create, :new, :update, :destroy, :edit ]
+  # before_action :set_accompagnement, only: [:show, :crate]
 
   def new
     @accompagnement = Accompagnement.new
@@ -12,6 +12,7 @@ class AccompagnementsController < ApplicationController
       redirect_to user_profil_path
     else
       render :create
+    end
   end
 
   def update
@@ -33,9 +34,9 @@ class AccompagnementsController < ApplicationController
 
   private
 
-  def set_accompagnement
-    @accompagnement = Accompagnement.find(params[:id])
-  end
+  # def set_accompagnement
+  #   @accompagnement = Accompagnement.find(params[:id])
+  # end
 
   def accompagnement_params
     params.require(:accompagnement).permit(:nom, :description, :temps, :prix)
