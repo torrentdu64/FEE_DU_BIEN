@@ -541,6 +541,29 @@ height:670px;
   width: 100%;
   height: 35px;
 }
+@media only screen and (max-width:1440px) {
+  .videosize{
+
+    z-index: -99 !important;
+    width: 1440px !important;
+    height: 726px !important;
+    position:absolute !important;
+    top: -52px !important;
+    left: -10px !important;
+
+  }
+
+ }
+ @media only screen and (max-width:1300px) {
+  .videosize{
+    z-index: -99 !important;
+    width: 1300px !important;
+    height: 726px !important;
+    position:absolute !important;
+    top: -52px !important;
+    left: -10px !important;
+  }
+}
 /*END YOUTUBE HOME DESIGN*/
 /*
 * ----------------------------------------------------------------------------------------
