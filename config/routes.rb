@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   resources :personnels
   resources :massages
   resources :accompagnements
+  resources :prestations
 
 
   devise_for :users
