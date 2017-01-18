@@ -1,59 +1,8 @@
 Rails.application.routes.draw do
-  get 'personnels/new'
+  resources :personnels
+  resources :massages
+  resources :accompagnements
 
-  get 'personnels/create'
-
-  get 'personnels/update'
-
-  get 'personnels/destroy'
-
-  get 'personnels/index'
-
-  get 'personnels/show'
-
-  get 'personnels/edit'
-
-  get 'prestations/new'
-
-  get 'prestations/create'
-
-  get 'prestations/update'
-
-  get 'prestations/edit'
-
-  get 'prestations/destroy'
-
-  get 'prestations/show'
-
-  get 'prestations/index'
-
-  get 'massages/new'
-
-  get 'massages/create'
-
-  get 'massages/update'
-
-  get 'massages/edit'
-
-  get 'massages/destroy'
-
-  get 'massages/show'
-
-  get 'massages/index'
-
-  get 'accompagnements/new'
-
-  get 'accompagnements/create'
-
-  get 'accompagnements/update'
-
-  get 'accompagnements/edit'
-
-  get 'accompagnements/destroy'
-
-  get 'accompagnements/show'
-
-  get 'accompagnements/index'
 
   devise_for :users
   root to: 'pages#home'

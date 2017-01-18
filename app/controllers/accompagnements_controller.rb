@@ -1,6 +1,6 @@
 class AccompagnementsController < ApplicationController
   skip_before_action :authenticate_user!, only: [ :index, :show, :create, :new, :update, :destroy, :edit ]
-  # before_action :set_accompagnement, only: [:show, :crate]
+  # before_action :set_accompagnement, only: [:show, :create]
 
   def new
     @accompagnement = Accompagnement.new
