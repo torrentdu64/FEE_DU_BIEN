@@ -1,6 +1,6 @@
 class PersonnelsController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :index, :show, :create, :new, :update, :destroy, :edit ]
-  # before_action :set_personnel,  only:[:show, :index ]
+  before_action :authenticate_user!, only: [ :index, :show, :create, :new, :update, :destroy, :edit ]
+  before_action :set_personnel,  only:[:show, :index ]
   def new
   end
 
@@ -25,9 +25,9 @@ class PersonnelsController < ApplicationController
 
   private
 
-  # def set_personnel
-  #   @personnel = Personnel.find(params[:id])
-  # end
+  def set_personnel
+    @personnel = Personnel.find(params[:id])
+  end
 
   def personnel_params
     params.require(:personnel).permit(:nom, :prenom, :description, :horaire, :adresse, :phone)

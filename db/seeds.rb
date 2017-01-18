@@ -37,11 +37,11 @@ puts "End seeding massage"
  # -------------------------------- Users  --------------------------------- #
 puts "Seeding User"
 
-michel = User.create!(prenom: 'michel',nom: 'patoudatchi',address: "5 place de la bourse, bordeaux",phone: 06 80 70 30 40 , email:'michel@gmail.com', password: "1234soleil")
-albert = User.create!(prenom: 'albert',nom: 'roso',address: "10 rue amélie, paris",phone: 06 80 70 30 40 , email:'albert@gmail.com', password: "1234soleil")
-robert = User.create!(prenom: 'robert',nom: 'lamarche',address: "15 cours jean pénicaud, limoges",phone: 06 80 70 30 40 , email:'robert@gmail.com', password: "1234soleil")
-jean = User.create!(prenom: 'jean',nom: 'domingo',address: "20 cours jean pénicaud, limoges",phone: 06 80 70 30 40 , email:'jean@gmail.com', password: "1234soleil")
-fred = User.create!(prenom: 'fred',nom: 'florus',address: "25 cours jean pénicaud, limoges",phone: 06 80 70 30 40 , email:'fred@gmail.com', password: "1234soleil")
+# michel = User.create!(prenom: 'michel',nom: 'patoudatchi',address: "5 place de la bourse, bordeaux",phone:  , email:'michel@gmail.com',password: "1234soleil")
+# albert = User.create!(prenom: 'albert',nom: 'roso',address: "10 rue amélie, paris",phone:  , email:'albert@gmail.com', password: "1234soleil")
+# robert = User.create!(prenom: 'robert',nom: 'lamarche',address: "15 cours jean pénicaud, limoges",phone:  , email:'robert@gmail.com', password: "1234soleil")
+# jean = User.create!(prenom: 'jean',nom: 'domingo',address: "20 cours jean pénicaud, limoges",phone:  , email:'jean@gmail.com', password: "1234soleil")
+# fred = User.create!(prenom: 'fred',nom: 'florus',address: "25 cours jean pénicaud, limoges",phone:  , email:'fred@gmail.com', password: "1234soleil")
 
 puts "END"
 
@@ -59,10 +59,8 @@ puts "END accompagnement"
 # -------------------------------- Personnel --------------------------------- #
 puts "Seeding personnel"
 
-sandra = Personnel.create!(nom: "Montenegro", prenom: "Sandra", description:"une délicieux masseuse" ,adresse:"10 rue de mon cul 64110 ORTHEZ",phone: 06 80 50  30 40)
-celia = Personnel.create!(nom: "Montenegro", prenom: "Celia",  description:"La plus belle et de loin" ,adresse:"10 rue de mon cul 64110 ORTHEZ",phone: 06 80 50  30 40)
-
- "Voir pour l horraire sur les models massage et accompagnement"
+# sandra = Personnel.create!(nom: "Montenegro", prenom: "Sandra", description:"une délicieux masseuse" ,adresse:"10 rue de mon cul 64110 ORTHEZ",phone: )
+# celia = Personnel.create!(nom: "Montenegro", prenom: "Celia",  description:"La plus belle et de loin" ,adresse:"10 rue de mon cul 64110 ORTHEZ",phone:)
 puts "END"
 
 # -------------------------------- Menu --------------------------------- #
