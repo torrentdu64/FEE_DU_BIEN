@@ -1,6 +1,6 @@
 class MassagesController < ApplicationController
   before_action :authenticate_user!, only: [ :index, :show, :create, :new, :update, :destroy, :edit ]
-  before_action :set_massage, only: [:show, :create, :auth]
+  before_action :set_massage, only: [:show, :create, :auth, :index]
   def new
   end
 
