@@ -9,8 +9,8 @@ class User < ActiveRecord::Base
   has_many :accompagnements, through: :prestations
   has_many :personnels, through: :prestations
 
-  validates :nom, presence: true
-  validates :prenom, presence: true
+  # # validates :nom, presence: true
+  # validates :prenom, presence: true
   validates :email, presence: true
 
 end

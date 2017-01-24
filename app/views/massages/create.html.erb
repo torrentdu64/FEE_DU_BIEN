@@ -1,2 +1,13 @@
 <h1>Massages#create</h1>
 <p>Find me in app/views/massages/create.html.erb</p>
+
+<div class="container">
+  <div class="row">
+    <%= simple_form_for @massage do |f| %>
+      <%= f.association :nom %>
+
+      <% f.input :, collection: 18..60, prompt: "Select your age", selected: 21 %>
+      <%= f.button :submit %>
+    <% end %>
+  </div>
+</div>
