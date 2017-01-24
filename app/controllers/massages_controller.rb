@@ -7,7 +7,7 @@ class MassagesController < ApplicationController
   def create
     @massage = Massage.new(massage_params)
     if @massage.save
-      redirect_to user_profil_path
+      redirect_to prestation_path
     else
       render :create
     end
