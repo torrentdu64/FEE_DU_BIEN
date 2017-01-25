@@ -11,7 +11,6 @@
 //= require wow.min.js
 //= require googlemap.js
 //= require scripts.js
-//= require simple_calendar
 //= require_tree .
 
 
