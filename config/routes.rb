@@ -8,12 +8,12 @@ Rails.application.routes.draw do
 
 
   resources :massages, only: [:index, :show] do
-    resources :prestations, only: [:new, :create ]
+    resources :prestations, only: [:new, :create, :index, :show ]
   end
 
 
   resources :accompagnements, only: [:index, :show] do
-    resources :prestations, only: [:new, :create ]
+    resources :prestations, only: [:new, :create, :index, :show ]
   end
 
   devise_for :users
