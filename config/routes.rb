@@ -1,9 +1,20 @@
 Rails.application.routes.draw do
-  resources :personnels
-  resources :massages
-  resources :accompagnements
-  resources :prestations
 
+
+
+  resources :personnels, only: [:index, :show] do
+    resources :prestations, only: [:index]
+  end
+
+
+  resources :massages, only: [:index, :show] do
+    resources :prestations, only: [:new, :create ]
+  end
+
+
+  resources :accompagnements, only: [:index, :show] do
+    resources :prestations, only: [:new, :create ]
+  end
 
   devise_for :users
   root to: 'pages#home'

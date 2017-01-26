@@ -5,12 +5,7 @@ class MassagesController < ApplicationController
   end
 
   def create
-    @massage = Massage.new(massage_params)
-    if @massage.save
-      redirect_to prestation_path
-    else
-      render :create
-    end
+
   end
 
   def update
@@ -23,6 +18,7 @@ class MassagesController < ApplicationController
   end
 
   def show
+    @message = Massage.new(massage_params)
   end
 
   def index

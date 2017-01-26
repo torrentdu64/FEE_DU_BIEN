@@ -1,6 +1,7 @@
 class PersonnelsController < ApplicationController
   before_action :authenticate_user!, only: [ :index, :show, :create, :new, :update, :destroy, :edit ]
   before_action :set_personnel,  only:[:show, :index ]
+
   def new
   end
 
@@ -18,6 +19,7 @@ class PersonnelsController < ApplicationController
   end
 
   def show
+
   end
 
   def edit

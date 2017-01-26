@@ -4,6 +4,12 @@ class PrestationsController < ApplicationController
   end
 
   def create
+
+    if @massage.save
+      redirect_to prestation_path
+    else
+      render :create
+    end
   end
 
   def update
