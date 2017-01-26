@@ -20,4 +20,13 @@ class PrestationsController < ApplicationController
 
   def index
   end
+
+  private
+
+  def method_name
+
+  end
+
+  def
+  end
 end
