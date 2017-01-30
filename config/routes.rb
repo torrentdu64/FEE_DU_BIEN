@@ -7,10 +7,10 @@ Rails.application.routes.draw do
   end
 
 
-  resources :massages, only: [:index, :show, :new, :create] do
+  resources :massages, only: [:new, :create] do
     resources :prestations, only: [:new, :create, :index, :show ]
   end
-
+  resources :massages, only: [:index, :show]
 
   resources :accompagnements, only: [:index, :show] do
     resources :prestations, only: [:new, :create, :index, :show ]
