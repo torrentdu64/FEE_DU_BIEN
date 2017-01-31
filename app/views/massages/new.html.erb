@@ -3,8 +3,12 @@
 
 
 
+f.input :country_id, collection: @continents
 
-
+<%= simple_form_for @massage do |f| %>
+<%= f.association :massage_id %>
+  <%= f.button :submit %>
+<% end %>
     t.string   "nom"
     t.text     "description"
     t.integer  "temps"

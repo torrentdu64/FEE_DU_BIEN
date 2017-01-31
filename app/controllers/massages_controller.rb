@@ -4,7 +4,7 @@ class MassagesController < ApplicationController
 
   def new
 
-    @massage = Massage.new
+    @massage = Massage.build(@massage)
   end
 
   def create
