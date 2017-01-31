@@ -3,7 +3,7 @@
       <div class="container">
         <div class="row text-center">
           <div class="section-title wow zoomIn">
-            <h2>Monalisa <span>Pricing</span></h2>
+            <h2>Monalisa <%= @massage.nom %><span>Pricing</span></h2>
             <div class="line"></div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod tempor enim minim veniam quis notru exercit ation Lorem ipsum dolor sit amet.</p>
           </div>
@@ -24,7 +24,7 @@
                  <li>24/7 Support</li>
               </ul>
               <div class="pricing-btn">
-                <%= link_to  do %>
+                <%= link_to new_massage_path(@massage) do %>
                   <button class="btn-light-bg">Get Plan</button>
                 <% end %>
               </div>
