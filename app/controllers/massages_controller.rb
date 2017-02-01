@@ -4,7 +4,7 @@ class MassagesController < ApplicationController
 
   def new
 
-    @massage = Massage.build(@massage)
+
   end
 
   def create
@@ -15,13 +15,14 @@ class MassagesController < ApplicationController
   end
 
   def edit
+    @massage = Massage.new
   end
 
   def destroy
   end
 
   def show
-
+    @massage = Massage.new(id: @massage.id)
   end
 
   def index

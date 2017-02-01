@@ -1,2 +1,7 @@
 <h1>Massages#edit</h1>
 <p>Find me in app/views/massages/edit.html.erb</p>
+
+<%= simple_form_for @massage do |f| %>
+<%= f.association :nom %>
+  <%= f.button :submit %>
+<% end %>

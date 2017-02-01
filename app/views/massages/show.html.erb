@@ -22,12 +22,16 @@
                  <li>Template design</li>
                  <li>Secure data</li>
                  <li>24/7 Support</li>
-              </ul>
+              </ul>ici
               <div class="pricing-btn">
-                <%= link_to new_massage_path(@massage) do %>
+                <%= link_to edit_massage_path(@massage) do %>
                   <button class="btn-light-bg">Get Plan</button>
                 <% end %>
               </div>
+              <%= simple_form_for @massage do |f| %>
+              <%= f.input :created_at, label: "Date", as: :date %>
+                <%= f.button :submit %>
+              <% end %>
 
             </div><!-- END PRICING TABLE -->
           </div><!-- END COL -->
