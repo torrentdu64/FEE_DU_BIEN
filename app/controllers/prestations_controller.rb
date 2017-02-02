@@ -35,8 +35,6 @@ class PrestationsController < ApplicationController
     @massage = Massage.find(params[:massage_id])
   end
 
-  def
 
-  end
 
 end

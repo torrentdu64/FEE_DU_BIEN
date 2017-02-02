@@ -7,6 +7,11 @@ class Massage < ActiveRecord::Base
   validates :description, presence: :true
   validates :temps, numericality: true
   validates :prix, numericality: true
+
+
+  # def start_time
+  #   self.massage.start ##Where 'start' is a attribute of type 'Date' accessible through MyModel's relationship
+  # end
 end
 
 
