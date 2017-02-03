@@ -9,7 +9,6 @@ class PrestationsController < ApplicationController
 
 
 
-    # we need `restaurant_id` to asssociate review with corresponding restaurant
 
 
     raise
