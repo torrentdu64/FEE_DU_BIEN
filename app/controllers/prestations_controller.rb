@@ -16,7 +16,7 @@ class PrestationsController < ApplicationController
 
 
 
-    # if @massage.save
+    # if (@massage.save && @prestation.save) || (@accompagnement.save && @prestation.save)
     #   redirect_to prestation_path
     # else
     #   render :create
