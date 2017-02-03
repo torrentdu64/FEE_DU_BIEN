@@ -1,6 +1,6 @@
 class PrestationsController < ApplicationController
   before_action :set_massage,  only:[ :show, :index, :create ]
-
+  before_action :set_accompagnement, only: [:show, :index, :create]
 
   def new
   end
