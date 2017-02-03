@@ -7,8 +7,8 @@ Rails.application.routes.draw do
   end
 
 
-  resources :massages, only: [:new, :create, :edit] do
-    resources :prestations, only: [ :index ]
+  resources :massages, only: [:index, :show] do
+    resources :prestations, only: [ :index, :show, :create ]
   end
 
 
@@ -18,7 +18,7 @@ Rails.application.routes.draw do
 
   devise_for :users
   root to: 'pages#home'
-  resources :massages, only: [:index, :show]
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -22,7 +22,10 @@ class MassagesController < ApplicationController
   end
 
   def show
+
     @massage = Massage.new(id: @massage.id, nom: @massage.nom, description: @massage.description, temps: @massage.temps, prix: @massage.prix, created_at: @massage.created_at, updated_at: @massage.updated_at )
+    @prestation = Prestation.new(massage_id: @massage.id, user_id: current_user.id)
+
 
   end
 

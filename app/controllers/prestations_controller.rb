@@ -1,11 +1,20 @@
 class PrestationsController < ApplicationController
-  before_action :set_massage,  only:[ :show, :index ]
+  before_action :set_massage,  only:[ :show, :index, :create ]
 
 
   def new
   end
 
   def create
+
+
+
+    # we need `restaurant_id` to asssociate review with corresponding restaurant
+
+
+    raise
+
+
 
     # if @massage.save
     #   redirect_to prestation_path
@@ -33,6 +42,10 @@ class PrestationsController < ApplicationController
 
   def set_massage
     @massage = Massage.find(params[:massage_id])
+  end
+
+  def massage_params
+    params.require(:massage).permit(:start_time, :end_time)
   end
 
 

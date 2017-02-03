@@ -24,11 +24,11 @@
                  <li>24/7 Support</li>
               </ul>ici
               <div class="pricing-btn">
-                <%= link_to edit_massage_path(@massage) do %>
+                <%= link_to massage_prestations_path(@massage) do %>
                   <button class="btn-light-bg">Get Plan</button>
                 <% end %>
               </div>
-              <%= simple_form_for @massage do |f| %>
+              <%= simple_form_for [@massage, @prestation] do |f| %>
               <%= f.input :start_time, label: "Date", as: :date %>
                 <%= f.button :submit %>
               <% end %>
