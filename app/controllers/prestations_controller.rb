@@ -48,6 +48,11 @@ class PrestationsController < ApplicationController
     params.require(:massage).permit(:start_time, :end_time)
   end
 
+  def prestation_params
+    params.require(:prestation).permit( :id, :date, :user_id, :massage_id, :accompagnement_id, :personnel_id, :created_at, :updated_at, :start_time, :end_time)
+  end
+
+
 
 
 end
