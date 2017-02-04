@@ -1,8 +1,6 @@
-# Add this line at the beginning, before `ActiveAdmin.setup do |config|`
-def authenticate_admin!
-  redirect_to new_user_session_path unless current_user && current_user.admin
-end
-
+  def authenticate_admin!
+    redirect_to new_user_session_path unless current_user && current_user.admin
+  end
 
 
 ActiveAdmin.setup do |config|
@@ -61,7 +59,7 @@ ActiveAdmin.setup do |config|
   #
   # This setting changes the method which Active Admin calls
   # within the application controller.
-   config.authentication_method = :authenticate_admin_user!
+   config.authentication_method = :authenticate_admin!
 
   # == User Authorization
   #
@@ -93,7 +91,7 @@ ActiveAdmin.setup do |config|
   #
   # This setting changes the method which Active Admin calls
   # (within the application controller) to return the currently logged in user.
-   config.current_user_method = :current_admin_user
+   config.current_user_method = :current_user
 
   # == Logging Out
   #
