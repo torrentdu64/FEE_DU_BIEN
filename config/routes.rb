@@ -21,6 +21,12 @@ Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
 
+# #config/routes.rb
+# match "/admin/update_passwords" => 'admin/update_passwords#edit', via: :get, as: "admin_update_passwords"
+# match "/admin/update_passwords" => 'admin/update_passwords#update', via: :post
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
