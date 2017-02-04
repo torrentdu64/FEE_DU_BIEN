@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
 
 
+  ActiveAdmin.routes(self)
   resources :personnels, only: [:index, :show] do
     resources :prestations, only: [:index]
   end
