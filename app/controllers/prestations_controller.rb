@@ -1,25 +1,31 @@
 class PrestationsController < ApplicationController
   before_action :set_massage,  only:[ :show, :index, :create ]
-  before_action :set_accompagnement, only: [:show, :index, :create]
+  # before_action :set_accompagnement, only: [:show, :index, :create]
 
   def new
   end
 
   def create
 
+    @prestation = Prestation.new(prestation_params)
+
+    # we need `restaurant_id` to asssociate review with corresponding restaurant
+
+    @massage.prestation = Massage.find(params[:massage_id])
 
 
 
 
-    raise
+   raise
 
 
 
-    # if (@massage.save && @prestation.save) || (@accompagnement.save && @prestation.save)
-    #   redirect_to prestation_path
-    # else
-    #   render :create
-    # end
+
+    if (@massage.save && @prestation.save) || (@accompagnement.save && @prestation.save)
+      redirect_to prestation_path
+    else
+      render :create
+    end
   end
 
   def update
