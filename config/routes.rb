@@ -23,7 +23,7 @@ Rails.application.routes.draw do
 
 # #config/routes.rb
 # match "/admin/update_passwords" => 'admin/update_passwords#edit', via: :get, as: "admin_update_passwords"
-# match "/admin/update_passwords" => 'admin/update_passwords#update', via: :post
+ # match "massages#show" => 'admin/massage_prestations#create', via: :post
 
 
 
