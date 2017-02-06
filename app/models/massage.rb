@@ -3,6 +3,8 @@ class Massage < ActiveRecord::Base
   has_many :personnels, through: :prestations
   has_many :users, through: :prestations
 
+
+
   validates :nom, presence: true
   validates :description, presence: :true
   validates :temps, numericality: true

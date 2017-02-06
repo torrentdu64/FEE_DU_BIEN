@@ -29,9 +29,11 @@
                 <% end %>
               </div>
               <%= simple_form_for [@massage, @prestation] do |f| %>
-              <%= f.input :start_time, label: "Date", as: :date %>
+
+              <%= f.input :start_time, :as => :time, label: "debut", :ampm => true, :minute_step => 15, :prompt => { :hour => "Hour", :minute => false }, :required => false %>
                 <%= f.button :submit %>
               <% end %>
+
 
 
             </div><!-- END PRICING TABLE -->

@@ -7,20 +7,14 @@ class PrestationsController < ApplicationController
 
   def create
 
-    @prestation = Prestation.new(prestation_params)
+    # @massage = Massage.new(massage_params)
+    @prestation = Prestation.new(prestation_params )
+                        # User.new({ :first_name => 'Jamie', :is_admin => true }, :without_protection => true)
+    # @prestation = massage_id: @massage.id, user_id: current_user.id
 
     # we need `restaurant_id` to asssociate review with corresponding restaurant
-
-    @massage.prestation = Massage.find(params[:massage_id])
-
-
-
-
+    # @massage.prestation = Massage.find(params[:massage_id])
    raise
-
-
-
-
     if (@massage.save && @prestation.save) || (@accompagnement.save && @prestation.save)
       redirect_to prestation_path
     else
@@ -49,12 +43,15 @@ class PrestationsController < ApplicationController
     @massage = Massage.find(params[:massage_id])
   end
 
+
+
   def massage_params
-    params.require(:massage).permit(:start_time, :end_time)
+    params.require(:massage).permit(:id, :updated_at, :created_at, :nom, :description, :temps, :prix, :start_time, :end_time)
   end
 
   def prestation_params
-    params.require(:prestation).permit( :id, :date, :user_id, :massage_id, :accompagnement_id, :personnel_id, :created_at, :updated_at, :start_time, :end_time)
+
+    params.require(:prestation).permit( :id, :date, :user_id, :massage_id, :accompagnement_id, :personnel_id, :created_at, :updated_at, :start_time, :end_time, pets: [ massage_id: @massage.id, user_id: current_user.id])
   end
 
 
