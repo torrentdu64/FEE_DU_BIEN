@@ -1,14 +1,17 @@
 class PrestationsController < ApplicationController
   before_action :set_massage,  only:[ :show, :index, :create ]
+  before_action :set_user, only: :create
   # before_action :set_accompagnement, only: [:show, :index, :create]
 
   def new
   end
 
   def create
+    # @massage = Massage.find(params[:massage_id])
+    @prestation = Prestation.new(prestation_params)
+    @prestation.user = current_user
+    @prestation.massage = @massage
 
-    # @massage = Massage.new(massage_params)
-    @prestation = Prestation.new(prestation_params )
                         # User.new({ :first_name => 'Jamie', :is_admin => true }, :without_protection => true)
     # @prestation = massage_id: @massage.id, user_id: current_user.id
 
@@ -39,6 +42,10 @@ class PrestationsController < ApplicationController
 
   private
 
+  def set_user
+    @user = User.find(current_user)
+  end
+
   def set_massage
     @massage = Massage.find(params[:massage_id])
   end
@@ -46,11 +53,10 @@ class PrestationsController < ApplicationController
 
 
   def massage_params
-    params.require(:massage).permit(:id, :updated_at, :created_at, :nom, :description, :temps, :prix, :start_time, :end_time)
+    params.require(:massage).permit(:id)
   end
 
   def prestation_params
-
     params.require(:prestation).permit( :id, :date, :user_id, :massage_id, :accompagnement_id, :personnel_id, :created_at, :updated_at, :start_time, :end_time, pets: [ massage_id: @massage.id, user_id: current_user.id])
   end
 

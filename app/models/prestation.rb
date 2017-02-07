@@ -5,7 +5,7 @@ class Prestation < ActiveRecord::Base
   belongs_to :personnel
 
 
-  validates :user, presence: true
-  validates :personnel, presence: true
-  validates :prestation, inclusion: { in: [:massage, :accompagnement] }
+  # validates :user, presence: true
+  # validates :personnel, presence: true
+  # validates :prestation, inclusion: { in: [:massage, :accompagnement] }
 end
