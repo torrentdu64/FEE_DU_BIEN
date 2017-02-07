@@ -11,10 +11,8 @@ class PrestationsController < ApplicationController
     @prestation = Prestation.new(prestation_params)
     @prestation.user = current_user
     @prestation.massage = @massage
-
-                        # User.new({ :first_name => 'Jamie', :is_admin => true }, :without_protection => true)
+    # User.new({ :first_name => 'Jamie', :is_admin => true }, :without_protection => true)
     # @prestation = massage_id: @massage.id, user_id: current_user.id
-
     # we need `restaurant_id` to asssociate review with corresponding restaurant
     # @massage.prestation = Massage.find(params[:massage_id])
    raise
