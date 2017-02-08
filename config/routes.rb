@@ -1,15 +1,14 @@
 Rails.application.routes.draw do
   ActiveAdmin.routes(self)
-  resources :personnels, only: [:index, :show] do
-    resources :prestations, only: [:new, :create, :edit, :update]
-  end
+
+  resources :personnels, only: [:index, :show]
 
   resources :massages, only: [:index, :show] do
     resources :prestations, only: [ :index, :show, :create ]
   end
 
   resources :accompagnements, only: [:index, :show] do
-    resources :prestations, only: [:new, :create, :index, :show ]
+    resources :prestations, only: [ :create, :index, :show ]
   end
 
   devise_for :users

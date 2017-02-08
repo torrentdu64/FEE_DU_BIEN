@@ -6,6 +6,12 @@ ActiveAdmin.register Prestation do
  permit_params :user_id, :massage_id, :accompagnement_id, :personnel_id, :start_time, :date
 
 
+
+
+
+
+
+
 #
 # or
 #
