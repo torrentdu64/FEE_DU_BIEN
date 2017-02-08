@@ -15,6 +15,7 @@ class PersonnelsController < ApplicationController
   end
 
   def index
+    @personnels = Personnel.all
 
   end
 

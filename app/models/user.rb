@@ -13,6 +13,13 @@ class User < ActiveRecord::Base
   # validates :prenom, presence: true
   validates :email, presence: true
 
+
+
+def name
+ email
+end
+
+
 end
 
 

@@ -8,4 +8,6 @@ class Prestation < ActiveRecord::Base
   # validates :user, presence: true
   # validates :personnel, presence: true
   # validates :prestation, inclusion: { in: [:massage, :accompagnement] }
+  #
+
 end

@@ -11,6 +11,10 @@ class Personnel < ActiveRecord::Base
   validates :horaire, presence: true
   validates :phone, numericality: true, presence: true
 
+
+  def name
+    "#{prenom} #{nom}"
+  end
 end
 
 

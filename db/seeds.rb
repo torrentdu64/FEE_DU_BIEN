@@ -59,8 +59,8 @@ puts "END accompagnement"
 # -------------------------------- Personnel --------------------------------- #
 puts "Seeding personnel"
 
-# sandra = Personnel.create!(nom: "Montenegro", prenom: "Sandra", description:"une délicieux masseuse" ,adresse:"10 rue de mon cul 64110 ORTHEZ",phone: )
-# celia = Personnel.create!(nom: "Montenegro", prenom: "Celia",  description:"La plus belle et de loin" ,adresse:"10 rue de mon cul 64110 ORTHEZ",phone:)
+sandra = Personnel.create!(nom: "Montenegro", prenom: "Sandra", description:"une délicieux masseuse" ,adresse:"10 rue de mon cul 64110 ORTHEZ",phone: )
+celia = Personnel.create!(nom: "Montenegro", prenom: "Celia",  description:"La plus belle et de loin" ,adresse:"10 rue de mon cul 64110 ORTHEZ",phone:)
 puts "END"
 
 # -------------------------------- Menu --------------------------------- #
