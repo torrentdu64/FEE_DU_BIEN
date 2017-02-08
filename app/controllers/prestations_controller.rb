@@ -15,9 +15,9 @@ class PrestationsController < ApplicationController
     # @prestation = massage_id: @massage.id, user_id: current_user.id
     # we need `restaurant_id` to asssociate review with corresponding restaurant
     # @massage.prestation = Massage.find(params[:massage_id])
-   raise
+
     if  @prestation.save
-      redirect_to prestation_path
+      redirect_to massage_prestation_path(@massage, @prestation)
     else
       render :show
     end
