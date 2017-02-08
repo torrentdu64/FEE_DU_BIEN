@@ -1,18 +1,12 @@
 Rails.application.routes.draw do
-
-
-
-
   ActiveAdmin.routes(self)
   resources :personnels, only: [:index, :show] do
-    resources :prestations, only: [:index]
+    resources :prestations, only: [:new, :create, :edit, :update]
   end
-
 
   resources :massages, only: [:index, :show] do
     resources :prestations, only: [ :index, :show, :create ]
   end
-
 
   resources :accompagnements, only: [:index, :show] do
     resources :prestations, only: [:new, :create, :index, :show ]
@@ -24,9 +18,6 @@ Rails.application.routes.draw do
 # #config/routes.rb
 # match "/admin/update_passwords" => 'admin/update_passwords#edit', via: :get, as: "admin_update_passwords"
  # match "massages#show" => 'admin/massage_prestations#create', via: :post
-
-
-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
