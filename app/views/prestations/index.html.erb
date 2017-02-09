@@ -2,21 +2,13 @@
 <p>Find me in app/views/prestations/index.html.erb</p>
 
 
-<div class="container">
+<!-- <div class="container">
   <div class="row">
-    <%= calendar partial: 'simple_calendar/calendar' do |date| %>
+    <%= calendar partial: 'simple_calendar/week_calendar' do |date| %>
       <%= date %>
     <% end %>
   </div>
-</div>
+</div> -->
 
 
-<%= month_calendar events: @massage do |date, meetings| %>
-  <%= date %>
 
-  <% meetings.each do |meeting| %>
-    <div>
-      <%= meeting.nom %>
-    </div>
-  <% end %>
-<% end %>

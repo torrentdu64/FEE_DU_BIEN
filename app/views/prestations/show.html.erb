@@ -1,5 +1,8 @@
 <h1>Prestations#show</h1>
 <p>Find me in app/views/prestations/show.html.erb</p>
 
-<%= if current_user %>
+<% if @user == current_user %>
+  <%= month_calendar(attribute: :prestation) do |date| %>
+    <%= date %>
+  <% end %>
 <% end %>
