@@ -1,8 +1,16 @@
 <h1>Prestations#show</h1>
 <p>Find me in app/views/prestations/show.html.erb</p>
 
-<% if @user == current_user %>
-  <%= month_calendar(attribute: :prestation) do |date| %>
-    <%= date %>
-  <% end %>
-<% end %>
+<div id="calendar"></div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+
+    // page is now ready, initialize the calendar...
+
+    $('#calendar').fullCalendar({
+        // put your options and callbacks here
+    })
+
+});
+</script>

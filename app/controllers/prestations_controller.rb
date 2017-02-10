@@ -34,7 +34,7 @@ class PrestationsController < ApplicationController
   end
 
   def show
-    raise
+
 
   end
 
