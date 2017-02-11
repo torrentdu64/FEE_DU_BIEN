@@ -20,7 +20,8 @@ module FEEDuBien
     config.generators do |generate|
       generate.assets false
     end
-
+    # application-print.css.scss
+    config.assets.precompile += ['application-print.css']
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
@@ -39,5 +40,6 @@ module FEEDuBien
     config.active_record.default_timezone = :local
 
     config.beginning_of_week = :monday
+
   end
 end
