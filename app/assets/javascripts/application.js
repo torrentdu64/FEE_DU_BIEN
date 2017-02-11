@@ -11,9 +11,9 @@
 //= require wow.min.js
 //= require googlemap.js
 //= require scripts.js
-//= require moment.js
-//= require fullcalendar.min.js
-//= require daterangepicker.js
+
+
+
 ////= require_tree .
 
 
