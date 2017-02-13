@@ -21,7 +21,7 @@ module FEEDuBien
       generate.assets false
     end
     # application-print.css.scss
-    config.assets.precompile += ['application-print.css']
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
@@ -36,10 +36,10 @@ module FEEDuBien
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
-    config.time_zone = 'Eastern Time (US & Canada)'
+
     config.active_record.default_timezone = :local
 
-    config.beginning_of_week = :monday
+
 
   end
 end
