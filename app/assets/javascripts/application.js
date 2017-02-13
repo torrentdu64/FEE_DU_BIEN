@@ -1,6 +1,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap-sprockets
+//= require jquery-ui.js
 //= require moment
 //= require fullcalendar
 //= require modernizr-2.8.3.min.js
@@ -15,11 +16,11 @@
 //= require scripts.js
 
 
-//= require jquery-ui.js
+
 
 
 ////= require_tree .
 
 
 
-$(function() { $('#calendar').fullCalendar(); })
+$('#calendar').fullCalendar({});
