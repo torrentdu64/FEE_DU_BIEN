@@ -18,6 +18,7 @@ class PrestationsController < ApplicationController
     # @massage.prestation = Massage.find(params[:massage_id])
 
     if  @prestation.save
+
       redirect_to massage_prestation_path(@massage, @prestation)
     else
       render :show
