@@ -2,7 +2,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap-sprockets
-
 //= require modernizr-2.8.3.min.js
 //= require jquery.inview.min.js
 //= require jquery.flexslider-min.js
