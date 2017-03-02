@@ -12,8 +12,8 @@
 //= require wow.min.js
 //= require googlemap.js
 //= require scripts.js
-//=  require fullcalendar.min.js
 //= require jquery-ui.js
+//= require fullcalendar.min.js
 // require_tree .
 
 
